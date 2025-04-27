@@ -1,0 +1,3 @@
+'model' folder is for interating with the Database.
+'controller' folder is for handling the request, processing the Data, generating the response.
+'routes' is for defining the endpoint of the application and also map them to the specific controller method.
