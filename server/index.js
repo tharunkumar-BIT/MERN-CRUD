@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import route from "./routes/userRoute.js";
 
 const app = express();
 app.use(bodyParser.json());
@@ -20,3 +21,5 @@ mongoose
     console.log("DB connected successfully");
   })
   .catch((err) => console.log(err));
+
+app.use("/api", route)
