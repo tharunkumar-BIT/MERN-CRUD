@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./User.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -18,9 +19,9 @@ const User = () => {
 
   return (
     <div className="userTable">
-      <button type="button" className="btn btn-primary">
+      <Link to="/add" type="button" className="btn btn-primary">
         Add user <i className="fa-solid fa-user-plus"></i>
-      </button>
+      </Link>
       <table className="table table-bordered">
         <thead>
           <tr>
